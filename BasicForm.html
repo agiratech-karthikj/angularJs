@@ -1,0 +1,45 @@
+<!-- Tabel Display Data -->
+<div class="container">
+	<div class="page-header">
+		<h3 class="text-center">Shipping Addresses Data</h3>
+	</div>
+	<div class="table-responsive">
+		<div class="shipaddrTable">
+			<table class="table table-striped">
+			    <thead>
+			      <tr>
+			        <th>Id</th>
+			        <th>Address1</th>
+			        <th>Address2</th>
+			        <th>City</th>
+			        <th>State</th>
+			        <th>Country</th>
+			        <th>ZipCode</th>
+			        <th>RetailerId</th>
+			      </tr>
+			    </thead>
+			    <tbody ng-repeat = "x in myData">
+					<td>{{x.id}}</td>
+					<td>{{x.address1}}</td>
+					<td>{{x.address2}}</td>
+					<td>{{x.city}}</td>
+					<td>{{x.state}}</td>
+					<td>{{x.country}}</td>
+					<td>{{x.zipCode}}</td>
+					<td>{{x.retailerId}}</td>
+					<td>
+						<button type="button" data-toggle="modal" title="edit" data-backdrop="static" data-keyboard="false" data-target="#editShippingAddress" 
+						>
+							<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+						</button>
+					</td>
+					<td>
+						<button type="button" data-toggle="modal" title="delete" data-backdrop="static" data-keyboard="false" data-target="#deleteShippingAddress">
+							<i class="fa fa-trash-o" aria-hidden="true"></i>
+						</button>
+					</td>
+			    </tbody>
+			</table>
+		</div>
+	</div>
+</div>
